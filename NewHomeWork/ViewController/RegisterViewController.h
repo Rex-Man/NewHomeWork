@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CityViewDelegate.h"
 
-@interface RegisterViewController : UIViewController
+@interface RegisterViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate,CityViewDelegate>
+
 
 @end

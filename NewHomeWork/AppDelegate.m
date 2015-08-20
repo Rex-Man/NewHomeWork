@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MainPageViewController.h"
+#import "RegisterViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,8 +17,31 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self initMainViewController];
     // Override point for customization after application launch.
     return YES;
+}
+-(void ) initMainViewController{
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    NSString *username = [userDefault objectForKey:@"username"];
+    
+    
+    if (!username) {
+        RegisterViewController *registerViewController=[[RegisterViewController alloc] initWithNibName:@"RegisterViewController" bundle:nil];
+        UINavigationController *mainNavigationController=[[UINavigationController alloc] initWithRootViewController:registerViewController];
+        //[mainNavigationController setTitle:@"Register"];
+        self.window.rootViewController = mainNavigationController;
+        [self.window makeKeyAndVisible];
+        
+    }else{
+        
+        MainPageViewController *mainPageViewController=[[MainPageViewController alloc] initWithNibName:@"MainPageViewController" bundle:nil];
+        
+        UINavigationController *mainNavigationController=[[UINavigationController alloc] initWithRootViewController:mainPageViewController];
+        
+        self.window.rootViewController = mainNavigationController;
+        [self.window makeKeyAndVisible];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

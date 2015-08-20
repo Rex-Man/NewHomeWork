@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @protocol CityViewDelegate <NSObject>
-
+   -(void)setSelectCity:(NSMutableArray *) selectCity;
 @end

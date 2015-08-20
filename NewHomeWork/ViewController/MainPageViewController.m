@@ -16,9 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initTableView];
     // Do any additional setup after loading the view from its nib.
 }
-
+- (void) initNavigationBar {
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    NSString *username = [userDefault objectForKey:@"username"];
+    self.title=username;
+}
+-(void) initTableView{
+    NSString *url=@"http://wangiv2-2-w7:3000/rest/findAutoHeightCellTestDate";
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
