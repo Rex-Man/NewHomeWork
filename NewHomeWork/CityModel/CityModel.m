@@ -6,4 +6,15 @@
 //  Copyright (c) 2015 admin. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "CityModel.h"
+
+@implementation CityModel
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey{
+    return @{
+             @"city":@"city",
+             @"country":@"country"
+             };
+}
+
+@end

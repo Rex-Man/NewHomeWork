@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6CBC07E000B9B0F9C0B33E6F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5A1B0BCC4D22DF1B6D37D1 /* libPods.a */; };
+		840A88EE1B85A1EC00A42CE1 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A88ED1B85A1EC00A42CE1 /* CityModel.m */; };
 		8467F9471B7CA4B600CD5244 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8467F9461B7CA4B600CD5244 /* main.m */; };
 		8467F94A1B7CA4B600CD5244 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8467F9491B7CA4B600CD5244 /* AppDelegate.m */; };
 		8467F94D1B7CA4B600CD5244 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8467F94C1B7CA4B600CD5244 /* ViewController.m */; };
@@ -37,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		13DF55B86C8B82929310DD75 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		840A88EC1B85A1C000A42CE1 /* CityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CityModel.h; path = CityModel/CityModel.h; sourceTree = "<group>"; };
+		840A88ED1B85A1EC00A42CE1 /* CityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityModel.m; path = CityModel/CityModel.m; sourceTree = "<group>"; };
 		8467F9411B7CA4B600CD5244 /* NewHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8467F9451B7CA4B600CD5244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8467F9461B7CA4B600CD5244 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,6 +98,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		840A88EB1B85A18900A42CE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				840A88EC1B85A1C000A42CE1 /* CityModel.h */,
+				840A88ED1B85A1EC00A42CE1 /* CityModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		8467F9381B7CA4B600CD5244 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +130,7 @@
 		8467F9431B7CA4B600CD5244 /* NewHomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				840A88EB1B85A18900A42CE1 /* Model */,
 				8467F9801B808FC500CD5244 /* Delegate */,
 				8467F96F1B7CA66000CD5244 /* ViewController */,
 				8467F9481B7CA4B600CD5244 /* AppDelegate.h */,
@@ -332,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840A88EE1B85A1EC00A42CE1 /* CityModel.m in Sources */,
 				8467F9781B7CA6BA00CD5244 /* RegisterViewController.m in Sources */,
 				8467F9731B7CA69100CD5244 /* MainPageViewController.m in Sources */,
 				8467F94D1B7CA4B600CD5244 /* ViewController.m in Sources */,

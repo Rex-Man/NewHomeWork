@@ -7,9 +7,12 @@
 //
 
 #import "ResultViewController.h"
+#import "AFHTTPRequestOperationManager.h"
+#import <Mantle/Mantle.h>
+#import "CityModel.h"
 
 @interface ResultViewController ()
-@property (retain,nonatomic) NSArray *dwarves;
+@property (retain,nonatomic) NSMutableArray *dwarves;
 @property (assign,nonatomic) BOOL  isInSearchMode;
 @property (strong,nonatomic) NSArray *filteredCity;
 @end
@@ -37,7 +40,25 @@
 }
 -(void) initTableView
 {
-    self.dwarves=[[NSMutableArray alloc] initWithObjects:@"Zhu Hai",@"Hong Kong",@"Guang Zhou",@"Shang Hai", nil];
+    self.dwarves=[[NSMutableArray alloc] init];
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    [manager GET:@"http://wangiv2-2-w7:3000/rest/getCityList" parameters:nil success: ^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        NSArray *data = responseObject;
+        for (NSDictionary *dataDict in data) {
+        CityModel *cityModel=[MTLJSONAdapter modelOfClass:CityModel.class fromJSONDictionary:dataDict error:nil];
+            [_dwarves addObject:cityModel];
+        }
+        
+    } failure: ^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", error);
+    }];
+    
+    
+    
+    
+    //self.dwarves=[[NSMutableArray alloc] initWithObjects:@"Zhu Hai",@"Hong Kong",@"Guang Zhou",@"Shang Hai", nil];
      //[self.cityTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"DelegateListTable"];
     
 }

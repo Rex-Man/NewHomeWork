@@ -6,8 +6,12 @@
 //  Copyright (c) 2015 admin. All rights reserved.
 //
 
-#ifndef NewHomeWork_CityModel_h
-#define NewHomeWork_CityModel_h
 
+#import <Mantle/Mantle.h>
 
-#endif
+@interface CityModel : MTLModel <MTLJSONSerializing>
+
+@property (nonatomic,strong) NSString * city;
+@property (nonatomic,strong) NSString * country;
+
+@end
