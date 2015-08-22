@@ -6,8 +6,15 @@
 //  Copyright (c) 2015 admin. All rights reserved.
 //
 
-#ifndef NewHomeWork_MainPageModel_h
-#define NewHomeWork_MainPageModel_h
+#import <Mantle/Mantle.h>
 
+@interface MainPageModel : MTLModel <MTLJSONSerializing>
 
-#endif
+@property (nonatomic,strong) NSString * title;
+@property (nonatomic,strong) NSString * detail;
+@property (nonatomic,strong) NSString * note;
+@property (nonatomic,strong) NSString * information;
+@property (nonatomic,strong) NSString * date;
+@property (nonatomic,assign) BOOL isFavorate;
+
+@end

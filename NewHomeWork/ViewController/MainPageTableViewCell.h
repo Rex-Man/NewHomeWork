@@ -13,6 +13,10 @@
 @property (strong, nonatomic) IBOutlet UILabel *userTitle;
 @property (strong, nonatomic) IBOutlet UILabel *userTime;
 @property (strong, nonatomic) IBOutlet UILabel *userDetail;
-@property (strong, nonatomic) IBOutlet UIImageView *favoriteIcon;
+@property (strong, nonatomic) IBOutlet UIButton *favoriteIconButton;
+@property (strong, nonatomic) IBOutlet UILabel *userNote;
+
+@property (strong, nonatomic) IBOutlet UILabel *userinformation;
+
 
 @end

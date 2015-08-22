@@ -6,4 +6,19 @@
 //  Copyright (c) 2015 admin. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "MainPageModel.h"
+
+@implementation MainPageModel
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey{
+    return @{
+             @"title":@"title",
+             @"detail":@"detail",
+             @"note":@"note",
+             @"information":@"information",
+             @"date":@"date",
+             @"isFavorate":@"isFavorate"
+             };
+}
+
+@end

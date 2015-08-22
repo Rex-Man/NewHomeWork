@@ -278,7 +278,8 @@
     NSString *username = [userDefault objectForKey:@"username"];
     if (username) {
         MainPageViewController *result = [[MainPageViewController alloc]initWithNibName:@"MainPageViewController" bundle:nil];
-        [self.navigationController pushViewController:result animated:YES];
+        UINavigationController *mainNavigationController=[[UINavigationController alloc] initWithRootViewController:result];
+       
     }
     
     

@@ -42,7 +42,8 @@
 {
     self.dwarves=[[NSMutableArray alloc] init];
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    
+    @try
+    {
     [manager GET:@"http://wangiv2-2-w7:3000/rest/getCityList" parameters:nil success: ^(AFHTTPRequestOperation *operation, id responseObject) {
         
         NSArray *data = responseObject;
@@ -50,10 +51,15 @@
         CityModel *cityModel=[MTLJSONAdapter modelOfClass:CityModel.class fromJSONDictionary:dataDict error:nil];
             [_dwarves addObject:cityModel];
         }
+        [_cityTableView reloadData];
         
     } failure: ^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", error);
     }];
+    }@catch(NSException *exception)
+    {
+       NSLog(@"%s\n%@", __FUNCTION__, exception);
+    }
     
     
     
@@ -117,16 +123,18 @@
     if (cell==nil) {
         cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
-    NSString *selectCellName;
+    
+    CityModel *cityModel;
     if(!_isInSearchMode)
     {
-        selectCellName=[self.dwarves objectAtIndex:[indexPath row]];
+        
+        cityModel=[self.dwarves objectAtIndex:[indexPath row]];
     }else{
-        selectCellName=[self.filteredCity objectAtIndex:[indexPath row]];
+        cityModel=[self.filteredCity objectAtIndex:[indexPath row]];
     }
    
-    cell.textLabel.text=selectCellName;
-    if (_selectCellValues.count>0 && [_selectCellValues containsObject:selectCellName]) {
+    cell.textLabel.text=cityModel.city;
+    if (_selectCellValues.count>0 && [_selectCellValues containsObject:cityModel.city]) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }else{
         cell.accessoryType = UITableViewCellAccessoryNone;
