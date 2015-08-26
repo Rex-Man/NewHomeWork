@@ -17,6 +17,7 @@
 @property (strong,nonatomic) UIAlertView *uiAlertView;
 @property (assign,nonatomic) NSInteger selectRow;
 @property (strong,nonatomic) MainPageTableViewCell *selectedCell;
+@property (strong,nonatomic) UIAlertView *afHTTPErrorAlert;
 
 
 @end
@@ -34,12 +35,15 @@
 -(void) initAlertView
 {
     _uiAlertView= [[UIAlertView alloc]initWithTitle:@"Demo" message:@"Are you sure to mark as favorite?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes"  , nil];
+     _afHTTPErrorAlert= [[UIAlertView alloc]initWithTitle:@"Alert" message:@"Service is not avaliable!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil  , nil];
+   
 }
 
 - (void) initNavigationBar {
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     NSString *username = [userDefault objectForKey:@"username"];
     self.title=username;
+    [self.navigationItem setHidesBackButton:YES];
 }
 -(void) initTableView{
     
@@ -56,6 +60,8 @@
         [_mainPageTableView reloadData];
         
     } failure: ^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        [_afHTTPErrorAlert show];
         NSLog(@"%@", error);
     }];
     
@@ -114,10 +120,7 @@
     [_uiAlertView show];
     
 }
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    _selectedCell=[self tableView:_mainPageTableView cellForRowAtIndexPath:indexPath];
-}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
@@ -129,15 +132,23 @@
 }
 -(void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     NSString *buttonTitle = [alertView buttonTitleAtIndex:buttonIndex];
-    MainPageModel *rowData = [self.mainPageDataArray objectAtIndex:self.selectRow];
-    if ([buttonTitle isEqualToString:@"Yes"]) {
-        rowData.isFavorate=YES;
-        [_selectedCell.favoriteIconButton setBackgroundImage:[UIImage imageNamed:@"misterwong.png"] forState:UIControlStateNormal];
-        NSLog(@"User pressed the Yes button.");
-    }else if([buttonTitle isEqualToString:@"No"]){
-        rowData.isFavorate=NO;
-        [_selectedCell.favoriteIconButton setBackgroundImage:[UIImage imageNamed:@"favorite.png"] forState:UIControlStateNormal];
-        NSLog(@"User pressed the No button.");
+    if (self.mainPageDataArray) {
+            if ([buttonTitle isEqualToString:@"OK"]) {
+                NSLog(@"OK close.");
+            }
+        
+    }else{
+        MainPageModel *rowData = [self.mainPageDataArray objectAtIndex:self.selectRow];
+        if ([buttonTitle isEqualToString:@"Yes"]) {
+            rowData.isFavorate=YES;
+            //[_selectedCell.favoriteIconButton setBackgroundImage:[UIImage imageNamed:@"misterwong.png"] forState:UIControlStateNormal];
+            NSLog(@"User pressed the Yes button.");
+        }else if([buttonTitle isEqualToString:@"No"]){
+            rowData.isFavorate=NO;
+            //[_selectedCell.favoriteIconButton setBackgroundImage:[UIImage imageNamed:@"favorite.png"] forState:UIControlStateNormal];
+            NSLog(@"User pressed the No button.");
+        }
+        [_mainPageTableView reloadData];
     }
 }
 /*
