@@ -19,9 +19,21 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self initMainViewController];
     // Override point for customization after application launch.
+    
+    [self testCode];
+    
+    
+    
     return YES;
 }
+-(void) testCode{
+}
 -(void ) initMainViewController{
+    
+    
+    
+    
+    
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     NSString *username = [userDefault objectForKey:@"username"];
     

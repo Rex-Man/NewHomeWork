@@ -25,6 +25,10 @@
 		8467F9851B8472AB00CD5244 /* MainPageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8467F9831B8472AB00CD5244 /* MainPageTableViewCell.m */; };
 		8467F9861B8472AB00CD5244 /* MainPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8467F9841B8472AB00CD5244 /* MainPageTableViewCell.xib */; };
 		F04427421B86C149002677FA /* MainPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F04427411B86C149002677FA /* MainPageModel.m */; };
+		F0D2C2B11B8DACBA00176B97 /* DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D2C2AF1B8DACBA00176B97 /* DelegateViewController.m */; };
+		F0D2C2B21B8DACBA00176B97 /* DelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0D2C2B01B8DACBA00176B97 /* DelegateViewController.xib */; };
+		F0D2C2B71B8DAD0A00176B97 /* DelegateListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D2C2B51B8DAD0A00176B97 /* DelegateListViewController.m */; };
+		F0D2C2B81B8DAD0A00176B97 /* DelegateListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0D2C2B61B8DAD0A00176B97 /* DelegateListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,12 @@
 		CF53629731239CEFADC813EE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F04427411B86C149002677FA /* MainPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainPageModel.m; path = CityModel/MainPageModel.m; sourceTree = "<group>"; };
 		F04427431B86C16B002677FA /* MainPageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainPageModel.h; path = CityModel/MainPageModel.h; sourceTree = "<group>"; };
+		F0D2C2AE1B8DACBA00176B97 /* DelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DelegateViewController.h; path = ViewController/DelegateViewController/DelegateViewController.h; sourceTree = "<group>"; };
+		F0D2C2AF1B8DACBA00176B97 /* DelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DelegateViewController.m; path = ViewController/DelegateViewController/DelegateViewController.m; sourceTree = "<group>"; };
+		F0D2C2B01B8DACBA00176B97 /* DelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DelegateViewController.xib; path = ViewController/DelegateViewController/DelegateViewController.xib; sourceTree = "<group>"; };
+		F0D2C2B41B8DAD0A00176B97 /* DelegateListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DelegateListViewController.h; path = ViewController/DelegateViewController/DelegateListViewController/DelegateListViewController.h; sourceTree = "<group>"; };
+		F0D2C2B51B8DAD0A00176B97 /* DelegateListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DelegateListViewController.m; path = ViewController/DelegateViewController/DelegateListViewController/DelegateListViewController.m; sourceTree = "<group>"; };
+		F0D2C2B61B8DAD0A00176B97 /* DelegateListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DelegateListViewController.xib; path = ViewController/DelegateViewController/DelegateListViewController/DelegateListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,18 +189,11 @@
 		8467F96F1B7CA66000CD5244 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				8467F9701B7CA69100CD5244 /* MainPageViewController.h */,
-				8467F9711B7CA69100CD5244 /* MainPageViewController.m */,
-				8467F9721B7CA69100CD5244 /* MainPageViewController.xib */,
-				8467F9751B7CA6BA00CD5244 /* RegisterViewController.h */,
-				8467F9761B7CA6BA00CD5244 /* RegisterViewController.m */,
-				8467F9771B7CA6BA00CD5244 /* RegisterViewController.xib */,
-				8467F97A1B7CA6DC00CD5244 /* ResultViewController.h */,
-				8467F97B1B7CA6DC00CD5244 /* ResultViewController.m */,
-				8467F97C1B7CA6DC00CD5244 /* ResultViewController.xib */,
-				8467F9821B8472AB00CD5244 /* MainPageTableViewCell.h */,
-				8467F9831B8472AB00CD5244 /* MainPageTableViewCell.m */,
-				8467F9841B8472AB00CD5244 /* MainPageTableViewCell.xib */,
+				F0D2C2B91B8DAE5900176B97 /* NewHomeWork */,
+				F0D2C2AD1B8DAC7200176B97 /* KVOViewController */,
+				F0D2C2AC1B8DAC5D00176B97 /* NotificationCenterViewController */,
+				F0D2C2AB1B8DAC4700176B97 /* BlockViewController */,
+				F0D2C2AA1B8DAC1700176B97 /* DelegateViewController */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -209,6 +212,67 @@
 				8D5A1B0BCC4D22DF1B6D37D1 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0D2C2AA1B8DAC1700176B97 /* DelegateViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F0D2C2B31B8DACC700176B97 /* ListViewController */,
+				F0D2C2AE1B8DACBA00176B97 /* DelegateViewController.h */,
+				F0D2C2AF1B8DACBA00176B97 /* DelegateViewController.m */,
+				F0D2C2B01B8DACBA00176B97 /* DelegateViewController.xib */,
+			);
+			name = DelegateViewController;
+			sourceTree = "<group>";
+		};
+		F0D2C2AB1B8DAC4700176B97 /* BlockViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BlockViewController;
+			sourceTree = "<group>";
+		};
+		F0D2C2AC1B8DAC5D00176B97 /* NotificationCenterViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NotificationCenterViewController;
+			sourceTree = "<group>";
+		};
+		F0D2C2AD1B8DAC7200176B97 /* KVOViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = KVOViewController;
+			sourceTree = "<group>";
+		};
+		F0D2C2B31B8DACC700176B97 /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F0D2C2B41B8DAD0A00176B97 /* DelegateListViewController.h */,
+				F0D2C2B51B8DAD0A00176B97 /* DelegateListViewController.m */,
+				F0D2C2B61B8DAD0A00176B97 /* DelegateListViewController.xib */,
+			);
+			name = ListViewController;
+			sourceTree = "<group>";
+		};
+		F0D2C2B91B8DAE5900176B97 /* NewHomeWork */ = {
+			isa = PBXGroup;
+			children = (
+				8467F9701B7CA69100CD5244 /* MainPageViewController.h */,
+				8467F9711B7CA69100CD5244 /* MainPageViewController.m */,
+				8467F9721B7CA69100CD5244 /* MainPageViewController.xib */,
+				8467F9751B7CA6BA00CD5244 /* RegisterViewController.h */,
+				8467F9761B7CA6BA00CD5244 /* RegisterViewController.m */,
+				8467F9771B7CA6BA00CD5244 /* RegisterViewController.xib */,
+				8467F97A1B7CA6DC00CD5244 /* ResultViewController.h */,
+				8467F97B1B7CA6DC00CD5244 /* ResultViewController.m */,
+				8467F97C1B7CA6DC00CD5244 /* ResultViewController.xib */,
+				8467F9821B8472AB00CD5244 /* MainPageTableViewCell.h */,
+				8467F9831B8472AB00CD5244 /* MainPageTableViewCell.m */,
+				8467F9841B8472AB00CD5244 /* MainPageTableViewCell.xib */,
+			);
+			name = NewHomeWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +361,9 @@
 				8467F97E1B7CA6DC00CD5244 /* ResultViewController.xib in Resources */,
 				8467F9791B7CA6BA00CD5244 /* RegisterViewController.xib in Resources */,
 				8467F9861B8472AB00CD5244 /* MainPageTableViewCell.xib in Resources */,
+				F0D2C2B81B8DAD0A00176B97 /* DelegateListViewController.xib in Resources */,
 				8467F9501B7CA4B600CD5244 /* Main.storyboard in Resources */,
+				F0D2C2B21B8DACBA00176B97 /* DelegateViewController.xib in Resources */,
 				8467F9551B7CA4B600CD5244 /* LaunchScreen.xib in Resources */,
 				8467F9521B7CA4B600CD5244 /* Images.xcassets in Resources */,
 			);
@@ -357,8 +423,10 @@
 				8467F94A1B7CA4B600CD5244 /* AppDelegate.m in Sources */,
 				8467F9471B7CA4B600CD5244 /* main.m in Sources */,
 				8467F97D1B7CA6DC00CD5244 /* ResultViewController.m in Sources */,
+				F0D2C2B11B8DACBA00176B97 /* DelegateViewController.m in Sources */,
 				F04427421B86C149002677FA /* MainPageModel.m in Sources */,
 				8467F9851B8472AB00CD5244 /* MainPageTableViewCell.m in Sources */,
+				F0D2C2B71B8DAD0A00176B97 /* DelegateListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

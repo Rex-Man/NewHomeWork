@@ -132,7 +132,7 @@
 }
 -(void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     NSString *buttonTitle = [alertView buttonTitleAtIndex:buttonIndex];
-    if (self.mainPageDataArray) {
+    if (!self.mainPageDataArray) {
             if ([buttonTitle isEqualToString:@"OK"]) {
                 NSLog(@"OK close.");
             }
