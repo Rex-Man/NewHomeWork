@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MainPageViewController.h"
 #import "RegisterViewController.h"
+#import "MainViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -30,30 +31,31 @@
 }
 -(void ) initMainViewController{
     
+    MainViewController *mainViewController=[[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+    UINavigationController *mainNavigationController=[[UINavigationController alloc] initWithRootViewController:mainViewController];
+    self.window.rootViewController = mainNavigationController;
+    [self.window makeKeyAndVisible];
+
+//    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+//    NSString *username = [userDefault objectForKey:@"username"];
+//    
     
-    
-    
-    
-    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-    NSString *username = [userDefault objectForKey:@"username"];
-    
-    
-    if (!username) {
-        RegisterViewController *registerViewController=[[RegisterViewController alloc] initWithNibName:@"RegisterViewController" bundle:nil];
-        UINavigationController *mainNavigationController=[[UINavigationController alloc] initWithRootViewController:registerViewController];
-        //[mainNavigationController setTitle:@"Register"];
-        self.window.rootViewController = mainNavigationController;
-        [self.window makeKeyAndVisible];
-        
-    }else{
-        
-        MainPageViewController *mainPageViewController=[[MainPageViewController alloc] initWithNibName:@"MainPageViewController" bundle:nil];
-        
-        UINavigationController *mainNavigationController=[[UINavigationController alloc] initWithRootViewController:mainPageViewController];
-        
-        self.window.rootViewController = mainNavigationController;
-        [self.window makeKeyAndVisible];
-    }
+//    if (!username) {
+//        RegisterViewController *registerViewController=[[RegisterViewController alloc] initWithNibName:@"RegisterViewController" bundle:nil];
+//        UINavigationController *mainNavigationController=[[UINavigationController alloc] initWithRootViewController:registerViewController];
+//        //[mainNavigationController setTitle:@"Register"];
+//        self.window.rootViewController = mainNavigationController;
+//        [self.window makeKeyAndVisible];
+//        
+//    }else{
+//        
+//        MainPageViewController *mainPageViewController=[[MainPageViewController alloc] initWithNibName:@"MainPageViewController" bundle:nil];
+//        
+//        UINavigationController *mainNavigationController=[[UINavigationController alloc] initWithRootViewController:mainPageViewController];
+//        
+//        self.window.rootViewController = mainNavigationController;
+//        [self.window makeKeyAndVisible];
+//    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

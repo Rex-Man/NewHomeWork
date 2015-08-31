@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
@@ -13,7 +14,38 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lii-Mf-crY">
+                    <rect key="frame" x="375" y="32" width="149" height="149"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="149" id="FtJ-fS-m3o"/>
+                        <constraint firstAttribute="width" constant="149" id="vg2-ia-q41"/>
+                    </constraints>
+                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a22-l6-Ud7" colorLabel="IBBuiltInLabel-Orange">
+                    <rect key="frame" x="88" y="32" width="153" height="149"/>
+                    <color key="backgroundColor" red="1" green="0.18636977608332261" blue="0.13175165412274226" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Lii-Mf-crY" firstAttribute="baseline" secondItem="a22-l6-Ud7" secondAttribute="baseline" id="22j-wD-hGg"/>
+                <constraint firstAttribute="trailing" secondItem="Lii-Mf-crY" secondAttribute="trailing" constant="76" id="8iK-jS-VVu"/>
+                <constraint firstItem="a22-l6-Ud7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="88" id="9hu-iY-X1X"/>
+                <constraint firstItem="Lii-Mf-crY" firstAttribute="top" secondItem="a22-l6-Ud7" secondAttribute="top" id="BoQ-TW-wOz"/>
+                <constraint firstItem="Lii-Mf-crY" firstAttribute="firstBaseline" secondItem="a22-l6-Ud7" secondAttribute="firstBaseline" id="Bp6-T4-Eud"/>
+                <constraint firstItem="Lii-Mf-crY" firstAttribute="bottom" secondItem="a22-l6-Ud7" secondAttribute="bottom" id="C7t-qu-p9R"/>
+                <constraint firstItem="a22-l6-Ud7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="GAV-rL-MCL"/>
+                <constraint firstItem="Lii-Mf-crY" firstAttribute="leading" secondItem="a22-l6-Ud7" secondAttribute="trailing" constant="134" id="y8B-L8-3Pa"/>
+            </constraints>
         </view>
     </objects>
 </document>

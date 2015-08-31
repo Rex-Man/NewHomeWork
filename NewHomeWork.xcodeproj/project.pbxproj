@@ -29,6 +29,8 @@
 		F0D2C2B21B8DACBA00176B97 /* DelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0D2C2B01B8DACBA00176B97 /* DelegateViewController.xib */; };
 		F0D2C2B71B8DAD0A00176B97 /* DelegateListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D2C2B51B8DAD0A00176B97 /* DelegateListViewController.m */; };
 		F0D2C2B81B8DAD0A00176B97 /* DelegateListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0D2C2B61B8DAD0A00176B97 /* DelegateListViewController.xib */; };
+		F0D2C2BD1B8DB0DF00176B97 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D2C2BB1B8DB0DF00176B97 /* MainViewController.m */; };
+		F0D2C2BE1B8DB0DF00176B97 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0D2C2BC1B8DB0DF00176B97 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,9 @@
 		F0D2C2B41B8DAD0A00176B97 /* DelegateListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DelegateListViewController.h; path = ViewController/DelegateViewController/DelegateListViewController/DelegateListViewController.h; sourceTree = "<group>"; };
 		F0D2C2B51B8DAD0A00176B97 /* DelegateListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DelegateListViewController.m; path = ViewController/DelegateViewController/DelegateListViewController/DelegateListViewController.m; sourceTree = "<group>"; };
 		F0D2C2B61B8DAD0A00176B97 /* DelegateListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DelegateListViewController.xib; path = ViewController/DelegateViewController/DelegateListViewController/DelegateListViewController.xib; sourceTree = "<group>"; };
+		F0D2C2BA1B8DB0DF00176B97 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F0D2C2BB1B8DB0DF00176B97 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F0D2C2BC1B8DB0DF00176B97 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +199,9 @@
 				F0D2C2AC1B8DAC5D00176B97 /* NotificationCenterViewController */,
 				F0D2C2AB1B8DAC4700176B97 /* BlockViewController */,
 				F0D2C2AA1B8DAC1700176B97 /* DelegateViewController */,
+				F0D2C2BA1B8DB0DF00176B97 /* MainViewController.h */,
+				F0D2C2BB1B8DB0DF00176B97 /* MainViewController.m */,
+				F0D2C2BC1B8DB0DF00176B97 /* MainViewController.xib */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -364,6 +372,7 @@
 				F0D2C2B81B8DAD0A00176B97 /* DelegateListViewController.xib in Resources */,
 				8467F9501B7CA4B600CD5244 /* Main.storyboard in Resources */,
 				F0D2C2B21B8DACBA00176B97 /* DelegateViewController.xib in Resources */,
+				F0D2C2BE1B8DB0DF00176B97 /* MainViewController.xib in Resources */,
 				8467F9551B7CA4B600CD5244 /* LaunchScreen.xib in Resources */,
 				8467F9521B7CA4B600CD5244 /* Images.xcassets in Resources */,
 			);
@@ -423,6 +432,7 @@
 				8467F94A1B7CA4B600CD5244 /* AppDelegate.m in Sources */,
 				8467F9471B7CA4B600CD5244 /* main.m in Sources */,
 				8467F97D1B7CA6DC00CD5244 /* ResultViewController.m in Sources */,
+				F0D2C2BD1B8DB0DF00176B97 /* MainViewController.m in Sources */,
 				F0D2C2B11B8DACBA00176B97 /* DelegateViewController.m in Sources */,
 				F04427421B86C149002677FA /* MainPageModel.m in Sources */,
 				8467F9851B8472AB00CD5244 /* MainPageTableViewCell.m in Sources */,
