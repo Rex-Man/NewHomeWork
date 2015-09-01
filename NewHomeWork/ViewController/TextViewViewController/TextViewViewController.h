@@ -1,5 +1,5 @@
 //
-//  MainViewController.h
+//  TextViewViewController.h
 //  ControlStudyProject
 //
 //  Created by rex man  on 15/8/29.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
+@interface TextViewViewController : UIViewController<UITextViewDelegate>
 
 @end

@@ -31,10 +31,14 @@
 }
 -(void ) initMainViewController{
     
+    
     MainViewController *mainViewController=[[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
     UINavigationController *mainNavigationController=[[UINavigationController alloc] initWithRootViewController:mainViewController];
     self.window.rootViewController = mainNavigationController;
     [self.window makeKeyAndVisible];
+
+    
+
 
 //    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
 //    NSString *username = [userDefault objectForKey:@"username"];
