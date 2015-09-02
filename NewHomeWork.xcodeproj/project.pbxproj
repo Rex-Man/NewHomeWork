@@ -28,11 +28,26 @@
 		8467F9521B7CA4B600CD5244 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8467F9511B7CA4B600CD5244 /* Images.xcassets */; };
 		8467F9551B7CA4B600CD5244 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8467F9531B7CA4B600CD5244 /* LaunchScreen.xib */; };
 		8467F9611B7CA4B600CD5244 /* NewHomeWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8467F9601B7CA4B600CD5244 /* NewHomeWorkTests.m */; };
+		F03480541B96C76C0083DF3D /* BlockListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F03480521B96C76C0083DF3D /* BlockListViewController.m */; };
+		F03480551B96C76C0083DF3D /* BlockListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03480531B96C76C0083DF3D /* BlockListViewController.xib */; };
+		F03480591B96C77C0083DF3D /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F03480571B96C77C0083DF3D /* BlockViewController.m */; };
+		F034805A1B96C77C0083DF3D /* BlockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03480581B96C77C0083DF3D /* BlockViewController.xib */; };
+		F034805E1B96C7910083DF3D /* NotificationCenterLiseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F034805C1B96C7910083DF3D /* NotificationCenterLiseViewController.m */; };
+		F034805F1B96C7910083DF3D /* NotificationCenterLiseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F034805D1B96C7910083DF3D /* NotificationCenterLiseViewController.xib */; };
+		F03480631B96C7A70083DF3D /* NotificationCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F03480611B96C7A70083DF3D /* NotificationCenterViewController.m */; };
+		F03480641B96C7A70083DF3D /* NotificationCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03480621B96C7A70083DF3D /* NotificationCenterViewController.xib */; };
+		F03480681B96C7C60083DF3D /* DelegateListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F03480661B96C7C60083DF3D /* DelegateListViewController.m */; };
+		F03480691B96C7C60083DF3D /* DelegateListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03480671B96C7C60083DF3D /* DelegateListViewController.xib */; };
+		F034806D1B96CAD20083DF3D /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F034806B1B96CAD20083DF3D /* KVOViewController.m */; };
+		F034806E1B96CAD20083DF3D /* KVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F034806C1B96CAD20083DF3D /* KVOViewController.xib */; };
+		F03480721B96CAE60083DF3D /* KVOListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F03480701B96CAE60083DF3D /* KVOListViewController.m */; };
+		F03480731B96CAE60083DF3D /* KVOListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03480711B96CAE60083DF3D /* KVOListViewController.xib */; };
+		F034807A1B96DE750083DF3D /* NSMutableArray+AddFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = F03480771B96DE750083DF3D /* NSMutableArray+AddFunction.m */; };
+		F034807B1B96DE750083DF3D /* UIColor+MJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F03480791B96DE750083DF3D /* UIColor+MJCategory.m */; };
+		F034807E1B96DE810083DF3D /* CommonStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F034807D1B96DE810083DF3D /* CommonStyle.m */; };
+		F03480821B96DF4C0083DF3D /* DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F03480801B96DF4C0083DF3D /* DelegateViewController.m */; };
+		F03480831B96DF4C0083DF3D /* DelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03480811B96DF4C0083DF3D /* DelegateViewController.xib */; };
 		F04427421B86C149002677FA /* MainPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F04427411B86C149002677FA /* MainPageModel.m */; };
-		F0D2C2B11B8DACBA00176B97 /* DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D2C2AF1B8DACBA00176B97 /* DelegateViewController.m */; };
-		F0D2C2B21B8DACBA00176B97 /* DelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0D2C2B01B8DACBA00176B97 /* DelegateViewController.xib */; };
-		F0D2C2B71B8DAD0A00176B97 /* DelegateListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D2C2B51B8DAD0A00176B97 /* DelegateListViewController.m */; };
-		F0D2C2B81B8DAD0A00176B97 /* DelegateListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0D2C2B61B8DAD0A00176B97 /* DelegateListViewController.xib */; };
 		F0D2C2BD1B8DB0DF00176B97 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D2C2BB1B8DB0DF00176B97 /* MainViewController.m */; };
 		F0D2C2BE1B8DB0DF00176B97 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0D2C2BC1B8DB0DF00176B97 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
@@ -85,14 +100,38 @@
 		8467F9811B80904100CD5244 /* CityViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityViewDelegate.h; path = Delegate/CityViewDelegate.h; sourceTree = "<group>"; };
 		8D5A1B0BCC4D22DF1B6D37D1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF53629731239CEFADC813EE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F03480511B96C76C0083DF3D /* BlockListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlockListViewController.h; path = ViewController/FourTransforDataWay/BlockViewController/ListViewController/BlockListViewController.h; sourceTree = "<group>"; };
+		F03480521B96C76C0083DF3D /* BlockListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlockListViewController.m; path = ViewController/FourTransforDataWay/BlockViewController/ListViewController/BlockListViewController.m; sourceTree = "<group>"; };
+		F03480531B96C76C0083DF3D /* BlockListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BlockListViewController.xib; path = ViewController/FourTransforDataWay/BlockViewController/ListViewController/BlockListViewController.xib; sourceTree = "<group>"; };
+		F03480561B96C77C0083DF3D /* BlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlockViewController.h; path = ViewController/FourTransforDataWay/BlockViewController/BlockViewController.h; sourceTree = "<group>"; };
+		F03480571B96C77C0083DF3D /* BlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlockViewController.m; path = ViewController/FourTransforDataWay/BlockViewController/BlockViewController.m; sourceTree = "<group>"; };
+		F03480581B96C77C0083DF3D /* BlockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BlockViewController.xib; path = ViewController/FourTransforDataWay/BlockViewController/BlockViewController.xib; sourceTree = "<group>"; };
+		F034805B1B96C7910083DF3D /* NotificationCenterLiseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotificationCenterLiseViewController.h; path = ViewController/FourTransforDataWay/NotificationCenterViewController/ListViewController/NotificationCenterLiseViewController.h; sourceTree = "<group>"; };
+		F034805C1B96C7910083DF3D /* NotificationCenterLiseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotificationCenterLiseViewController.m; path = ViewController/FourTransforDataWay/NotificationCenterViewController/ListViewController/NotificationCenterLiseViewController.m; sourceTree = "<group>"; };
+		F034805D1B96C7910083DF3D /* NotificationCenterLiseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NotificationCenterLiseViewController.xib; path = ViewController/FourTransforDataWay/NotificationCenterViewController/ListViewController/NotificationCenterLiseViewController.xib; sourceTree = "<group>"; };
+		F03480601B96C7A70083DF3D /* NotificationCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotificationCenterViewController.h; path = ViewController/FourTransforDataWay/NotificationCenterViewController/NotificationCenterViewController.h; sourceTree = "<group>"; };
+		F03480611B96C7A70083DF3D /* NotificationCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotificationCenterViewController.m; path = ViewController/FourTransforDataWay/NotificationCenterViewController/NotificationCenterViewController.m; sourceTree = "<group>"; };
+		F03480621B96C7A70083DF3D /* NotificationCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NotificationCenterViewController.xib; path = ViewController/FourTransforDataWay/NotificationCenterViewController/NotificationCenterViewController.xib; sourceTree = "<group>"; };
+		F03480651B96C7C60083DF3D /* DelegateListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DelegateListViewController.h; path = ViewController/FourTransforDataWay/DelegateViewController/DelegateListViewController/DelegateListViewController.h; sourceTree = "<group>"; };
+		F03480661B96C7C60083DF3D /* DelegateListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DelegateListViewController.m; path = ViewController/FourTransforDataWay/DelegateViewController/DelegateListViewController/DelegateListViewController.m; sourceTree = "<group>"; };
+		F03480671B96C7C60083DF3D /* DelegateListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DelegateListViewController.xib; path = ViewController/FourTransforDataWay/DelegateViewController/DelegateListViewController/DelegateListViewController.xib; sourceTree = "<group>"; };
+		F034806A1B96CAD20083DF3D /* KVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVOViewController.h; path = ViewController/FourTransforDataWay/KVOViewController/KVOViewController.h; sourceTree = "<group>"; };
+		F034806B1B96CAD20083DF3D /* KVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVOViewController.m; path = ViewController/FourTransforDataWay/KVOViewController/KVOViewController.m; sourceTree = "<group>"; };
+		F034806C1B96CAD20083DF3D /* KVOViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KVOViewController.xib; path = ViewController/FourTransforDataWay/KVOViewController/KVOViewController.xib; sourceTree = "<group>"; };
+		F034806F1B96CAE60083DF3D /* KVOListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVOListViewController.h; path = ViewController/FourTransforDataWay/KVOViewController/ListViewController/KVOListViewController.h; sourceTree = "<group>"; };
+		F03480701B96CAE60083DF3D /* KVOListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVOListViewController.m; path = ViewController/FourTransforDataWay/KVOViewController/ListViewController/KVOListViewController.m; sourceTree = "<group>"; };
+		F03480711B96CAE60083DF3D /* KVOListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KVOListViewController.xib; path = ViewController/FourTransforDataWay/KVOViewController/ListViewController/KVOListViewController.xib; sourceTree = "<group>"; };
+		F03480761B96DE750083DF3D /* NSMutableArray+AddFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+AddFunction.h"; path = "Category/NSMutableArray+AddFunction.h"; sourceTree = "<group>"; };
+		F03480771B96DE750083DF3D /* NSMutableArray+AddFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+AddFunction.m"; path = "Category/NSMutableArray+AddFunction.m"; sourceTree = "<group>"; };
+		F03480781B96DE750083DF3D /* UIColor+MJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+MJCategory.h"; path = "Category/UIColor+MJCategory.h"; sourceTree = "<group>"; };
+		F03480791B96DE750083DF3D /* UIColor+MJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MJCategory.m"; path = "Category/UIColor+MJCategory.m"; sourceTree = "<group>"; };
+		F034807C1B96DE810083DF3D /* CommonStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonStyle.h; path = Common/CommonStyle.h; sourceTree = "<group>"; };
+		F034807D1B96DE810083DF3D /* CommonStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommonStyle.m; path = Common/CommonStyle.m; sourceTree = "<group>"; };
+		F034807F1B96DF4C0083DF3D /* DelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DelegateViewController.h; path = ViewController/FourTransforDataWay/DelegateViewController/DelegateViewController.h; sourceTree = "<group>"; };
+		F03480801B96DF4C0083DF3D /* DelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DelegateViewController.m; path = ViewController/FourTransforDataWay/DelegateViewController/DelegateViewController.m; sourceTree = "<group>"; };
+		F03480811B96DF4C0083DF3D /* DelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DelegateViewController.xib; path = ViewController/FourTransforDataWay/DelegateViewController/DelegateViewController.xib; sourceTree = "<group>"; };
 		F04427411B86C149002677FA /* MainPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainPageModel.m; path = CityModel/MainPageModel.m; sourceTree = "<group>"; };
 		F04427431B86C16B002677FA /* MainPageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainPageModel.h; path = CityModel/MainPageModel.h; sourceTree = "<group>"; };
-		F0D2C2AE1B8DACBA00176B97 /* DelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DelegateViewController.h; path = ViewController/DelegateViewController/DelegateViewController.h; sourceTree = "<group>"; };
-		F0D2C2AF1B8DACBA00176B97 /* DelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DelegateViewController.m; path = ViewController/DelegateViewController/DelegateViewController.m; sourceTree = "<group>"; };
-		F0D2C2B01B8DACBA00176B97 /* DelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DelegateViewController.xib; path = ViewController/DelegateViewController/DelegateViewController.xib; sourceTree = "<group>"; };
-		F0D2C2B41B8DAD0A00176B97 /* DelegateListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DelegateListViewController.h; path = ViewController/DelegateViewController/DelegateListViewController/DelegateListViewController.h; sourceTree = "<group>"; };
-		F0D2C2B51B8DAD0A00176B97 /* DelegateListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DelegateListViewController.m; path = ViewController/DelegateViewController/DelegateListViewController/DelegateListViewController.m; sourceTree = "<group>"; };
-		F0D2C2B61B8DAD0A00176B97 /* DelegateListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DelegateListViewController.xib; path = ViewController/DelegateViewController/DelegateListViewController/DelegateListViewController.xib; sourceTree = "<group>"; };
 		F0D2C2BA1B8DB0DF00176B97 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F0D2C2BB1B8DB0DF00176B97 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F0D2C2BC1B8DB0DF00176B97 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -189,6 +228,8 @@
 		8467F9431B7CA4B600CD5244 /* NewHomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				F03480751B96DDCD0083DF3D /* Category */,
+				F03480741B96DDBC0083DF3D /* Common */,
 				840A88EB1B85A18900A42CE1 /* Model */,
 				8467F9801B808FC500CD5244 /* Delegate */,
 				8467F96F1B7CA66000CD5244 /* ViewController */,
@@ -233,12 +274,9 @@
 		8467F96F1B7CA66000CD5244 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F03480461B96AA310083DF3D /* FourTransforDataWay */,
 				4A9186F91B9554C6004907F7 /* ControlStudyProject */,
 				F0D2C2B91B8DAE5900176B97 /* NewHomeWork */,
-				F0D2C2AD1B8DAC7200176B97 /* KVOViewController */,
-				F0D2C2AC1B8DAC5D00176B97 /* NotificationCenterViewController */,
-				F0D2C2AB1B8DAC4700176B97 /* BlockViewController */,
-				F0D2C2AA1B8DAC1700176B97 /* DelegateViewController */,
 				F0D2C2BA1B8DB0DF00176B97 /* MainViewController.h */,
 				F0D2C2BB1B8DB0DF00176B97 /* MainViewController.m */,
 				F0D2C2BC1B8DB0DF00176B97 /* MainViewController.xib */,
@@ -262,13 +300,74 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F03480461B96AA310083DF3D /* FourTransforDataWay */ = {
+			isa = PBXGroup;
+			children = (
+				F0D2C2AB1B8DAC4700176B97 /* BlockViewController */,
+				F0D2C2AC1B8DAC5D00176B97 /* NotificationCenterViewController */,
+				F0D2C2AD1B8DAC7200176B97 /* KVOViewController */,
+				F0D2C2AA1B8DAC1700176B97 /* DelegateViewController */,
+			);
+			name = FourTransforDataWay;
+			sourceTree = "<group>";
+		};
+		F034804C1B96C59A0083DF3D /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F034806F1B96CAE60083DF3D /* KVOListViewController.h */,
+				F03480701B96CAE60083DF3D /* KVOListViewController.m */,
+				F03480711B96CAE60083DF3D /* KVOListViewController.xib */,
+			);
+			name = ListViewController;
+			sourceTree = "<group>";
+		};
+		F034804D1B96C5A90083DF3D /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F034805B1B96C7910083DF3D /* NotificationCenterLiseViewController.h */,
+				F034805C1B96C7910083DF3D /* NotificationCenterLiseViewController.m */,
+				F034805D1B96C7910083DF3D /* NotificationCenterLiseViewController.xib */,
+			);
+			name = ListViewController;
+			sourceTree = "<group>";
+		};
+		F034804E1B96C5BB0083DF3D /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F03480511B96C76C0083DF3D /* BlockListViewController.h */,
+				F03480521B96C76C0083DF3D /* BlockListViewController.m */,
+				F03480531B96C76C0083DF3D /* BlockListViewController.xib */,
+			);
+			name = ListViewController;
+			sourceTree = "<group>";
+		};
+		F03480741B96DDBC0083DF3D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F034807C1B96DE810083DF3D /* CommonStyle.h */,
+				F034807D1B96DE810083DF3D /* CommonStyle.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		F03480751B96DDCD0083DF3D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F03480761B96DE750083DF3D /* NSMutableArray+AddFunction.h */,
+				F03480771B96DE750083DF3D /* NSMutableArray+AddFunction.m */,
+				F03480781B96DE750083DF3D /* UIColor+MJCategory.h */,
+				F03480791B96DE750083DF3D /* UIColor+MJCategory.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 		F0D2C2AA1B8DAC1700176B97 /* DelegateViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F034807F1B96DF4C0083DF3D /* DelegateViewController.h */,
+				F03480801B96DF4C0083DF3D /* DelegateViewController.m */,
+				F03480811B96DF4C0083DF3D /* DelegateViewController.xib */,
 				F0D2C2B31B8DACC700176B97 /* ListViewController */,
-				F0D2C2AE1B8DACBA00176B97 /* DelegateViewController.h */,
-				F0D2C2AF1B8DACBA00176B97 /* DelegateViewController.m */,
-				F0D2C2B01B8DACBA00176B97 /* DelegateViewController.xib */,
 			);
 			name = DelegateViewController;
 			sourceTree = "<group>";
@@ -276,6 +375,10 @@
 		F0D2C2AB1B8DAC4700176B97 /* BlockViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F03480561B96C77C0083DF3D /* BlockViewController.h */,
+				F03480571B96C77C0083DF3D /* BlockViewController.m */,
+				F03480581B96C77C0083DF3D /* BlockViewController.xib */,
+				F034804E1B96C5BB0083DF3D /* ListViewController */,
 			);
 			name = BlockViewController;
 			sourceTree = "<group>";
@@ -283,6 +386,10 @@
 		F0D2C2AC1B8DAC5D00176B97 /* NotificationCenterViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F03480601B96C7A70083DF3D /* NotificationCenterViewController.h */,
+				F03480611B96C7A70083DF3D /* NotificationCenterViewController.m */,
+				F03480621B96C7A70083DF3D /* NotificationCenterViewController.xib */,
+				F034804D1B96C5A90083DF3D /* ListViewController */,
 			);
 			name = NotificationCenterViewController;
 			sourceTree = "<group>";
@@ -290,6 +397,10 @@
 		F0D2C2AD1B8DAC7200176B97 /* KVOViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F034806A1B96CAD20083DF3D /* KVOViewController.h */,
+				F034806B1B96CAD20083DF3D /* KVOViewController.m */,
+				F034806C1B96CAD20083DF3D /* KVOViewController.xib */,
+				F034804C1B96C59A0083DF3D /* ListViewController */,
 			);
 			name = KVOViewController;
 			sourceTree = "<group>";
@@ -297,9 +408,9 @@
 		F0D2C2B31B8DACC700176B97 /* ListViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F0D2C2B41B8DAD0A00176B97 /* DelegateListViewController.h */,
-				F0D2C2B51B8DAD0A00176B97 /* DelegateListViewController.m */,
-				F0D2C2B61B8DAD0A00176B97 /* DelegateListViewController.xib */,
+				F03480651B96C7C60083DF3D /* DelegateListViewController.h */,
+				F03480661B96C7C60083DF3D /* DelegateListViewController.m */,
+				F03480671B96C7C60083DF3D /* DelegateListViewController.xib */,
 			);
 			name = ListViewController;
 			sourceTree = "<group>";
@@ -405,14 +516,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0D2C2B81B8DAD0A00176B97 /* DelegateListViewController.xib in Resources */,
 				8467F9501B7CA4B600CD5244 /* Main.storyboard in Resources */,
-				F0D2C2B21B8DACBA00176B97 /* DelegateViewController.xib in Resources */,
+				F03480551B96C76C0083DF3D /* BlockListViewController.xib in Resources */,
 				4A9187171B9598C5004907F7 /* TextFieldViewController.xib in Resources */,
+				F034806E1B96CAD20083DF3D /* KVOViewController.xib in Resources */,
 				4A9187121B9598A6004907F7 /* ResultViewController.xib in Resources */,
+				F03480691B96C7C60083DF3D /* DelegateListViewController.xib in Resources */,
+				F03480731B96CAE60083DF3D /* KVOListViewController.xib in Resources */,
+				F034805F1B96C7910083DF3D /* NotificationCenterLiseViewController.xib in Resources */,
+				F03480641B96C7A70083DF3D /* NotificationCenterViewController.xib in Resources */,
 				4A91870C1B9598A6004907F7 /* MainPageTableViewCell.xib in Resources */,
 				4A91870E1B9598A6004907F7 /* MainPageViewController.xib in Resources */,
+				F034805A1B96C77C0083DF3D /* BlockViewController.xib in Resources */,
 				4A9187101B9598A6004907F7 /* RegisterViewController.xib in Resources */,
+				F03480831B96DF4C0083DF3D /* DelegateViewController.xib in Resources */,
 				F0D2C2BE1B8DB0DF00176B97 /* MainViewController.xib in Resources */,
 				8467F9551B7CA4B600CD5244 /* LaunchScreen.xib in Resources */,
 				4A91871C1B9598E3004907F7 /* TextViewViewController.xib in Resources */,
@@ -468,17 +585,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A91870F1B9598A6004907F7 /* RegisterViewController.m in Sources */,
+				F03480681B96C7C60083DF3D /* DelegateListViewController.m in Sources */,
+				F034807E1B96DE810083DF3D /* CommonStyle.m in Sources */,
 				4A91870D1B9598A6004907F7 /* MainPageViewController.m in Sources */,
+				F03480631B96C7A70083DF3D /* NotificationCenterViewController.m in Sources */,
+				F034807B1B96DE750083DF3D /* UIColor+MJCategory.m in Sources */,
 				840A88EE1B85A1EC00A42CE1 /* CityModel.m in Sources */,
+				F03480591B96C77C0083DF3D /* BlockViewController.m in Sources */,
+				F034807A1B96DE750083DF3D /* NSMutableArray+AddFunction.m in Sources */,
 				8467F94D1B7CA4B600CD5244 /* ViewController.m in Sources */,
+				F034805E1B96C7910083DF3D /* NotificationCenterLiseViewController.m in Sources */,
 				8467F94A1B7CA4B600CD5244 /* AppDelegate.m in Sources */,
 				4A91870B1B9598A6004907F7 /* MainPageTableViewCell.m in Sources */,
+				F03480821B96DF4C0083DF3D /* DelegateViewController.m in Sources */,
 				4A91871B1B9598E3004907F7 /* TextViewViewController.m in Sources */,
 				8467F9471B7CA4B600CD5244 /* main.m in Sources */,
 				F0D2C2BD1B8DB0DF00176B97 /* MainViewController.m in Sources */,
-				F0D2C2B11B8DACBA00176B97 /* DelegateViewController.m in Sources */,
+				F03480721B96CAE60083DF3D /* KVOListViewController.m in Sources */,
 				F04427421B86C149002677FA /* MainPageModel.m in Sources */,
-				F0D2C2B71B8DAD0A00176B97 /* DelegateListViewController.m in Sources */,
+				F03480541B96C76C0083DF3D /* BlockListViewController.m in Sources */,
+				F034806D1B96CAD20083DF3D /* KVOViewController.m in Sources */,
 				4A9187111B9598A6004907F7 /* ResultViewController.m in Sources */,
 				4A9187161B9598C5004907F7 /* TextFieldViewController.m in Sources */,
 			);

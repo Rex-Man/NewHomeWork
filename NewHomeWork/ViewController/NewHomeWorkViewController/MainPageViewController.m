@@ -43,7 +43,7 @@
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     NSString *username = [userDefault objectForKey:@"username"];
     self.title=username;
-    [self.navigationItem setHidesBackButton:YES];
+    //[self.navigationItem setHidesBackButton:YES];
 }
 -(void) initTableView{
     
@@ -57,6 +57,7 @@
             MainPageModel *mainPageModel=[MTLJSONAdapter modelOfClass:MainPageModel.class fromJSONDictionary:dataDict error:nil];
             [_mainPageDataArray addObject:mainPageModel];
         }
+   
         [_mainPageTableView reloadData];
         
     } failure: ^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -138,17 +139,21 @@
             }
         
     }else{
-        MainPageModel *rowData = [self.mainPageDataArray objectAtIndex:self.selectRow];
-        if ([buttonTitle isEqualToString:@"Yes"]) {
-            rowData.isFavorate=YES;
+        if ([self.mainPageDataArray count]>0) {
+           
+        
+               MainPageModel *rowData = [self.mainPageDataArray objectAtIndex:self.selectRow];
+               if ([buttonTitle isEqualToString:@"Yes"]) {
+                     rowData.isFavorate=YES;
             //[_selectedCell.favoriteIconButton setBackgroundImage:[UIImage imageNamed:@"misterwong.png"] forState:UIControlStateNormal];
-            NSLog(@"User pressed the Yes button.");
-        }else if([buttonTitle isEqualToString:@"No"]){
-            rowData.isFavorate=NO;
+                     NSLog(@"User pressed the Yes button.");
+               }else if([buttonTitle isEqualToString:@"No"]){
+                     rowData.isFavorate=NO;
             //[_selectedCell.favoriteIconButton setBackgroundImage:[UIImage imageNamed:@"favorite.png"] forState:UIControlStateNormal];
-            NSLog(@"User pressed the No button.");
-        }
-        [_mainPageTableView reloadData];
+                     NSLog(@"User pressed the No button.");
+                 }
+                 [_mainPageTableView reloadData];
+            }
     }
 }
 /*
