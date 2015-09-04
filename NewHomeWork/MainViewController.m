@@ -16,6 +16,7 @@
 #import "BlockViewController.h"
 #import "CommonStyle.h"
 #import "RegisterViewController.h"
+#import "AutoLayOutViewController.h"
 
 
 @interface MainViewController ()
@@ -40,7 +41,7 @@
 }
 -(void)initTableView
 {
-    informationArray=[NSArray arrayWithObjects:@"TextField",@"TextView",@"NewHomeWork",@"FourWaysTransforData",nil];
+    informationArray=[NSArray arrayWithObjects:@"TextField",@"TextView",@"NewHomeWork",@"FourWaysTransforData",@"AutoLayOut",nil];
     TextFieldViewController *textFieldViewController=[[TextFieldViewController alloc] initWithNibName:@"TextFieldViewController" bundle:nil];
     TextViewViewController *textViewViewController=[[TextViewViewController alloc]initWithNibName:@"TextViewViewController" bundle:nil];
     MainPageViewController *mainViewController=[[MainPageViewController alloc] initWithNibName:@"MainPageViewController" bundle:nil];
@@ -85,8 +86,13 @@
     [controllers addObject:kvoViewController];
     [controllers addObject:blockViewController];
     tabBarController.viewControllers =controllers;
+    
+    //test AutoLayOut
+    AutoLayOutViewController *autoLayOutViewController=[[AutoLayOutViewController alloc] initWithNibName:@"AutoLayOutViewController" bundle:nil];
+    
+    
 
-    dictionarylink=[[NSDictionary alloc] initWithObjectsAndKeys:textFieldViewController,@"TextField",textViewViewController,@"TextView",mainViewController,@"NewHomeWork",tabBarController,@"FourWaysTransforData", nil];
+    dictionarylink=[[NSDictionary alloc] initWithObjectsAndKeys:textFieldViewController,@"TextField",textViewViewController,@"TextView",mainViewController,@"NewHomeWork",tabBarController,@"FourWaysTransforData",autoLayOutViewController,@"AutoLayOut", nil];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -101,7 +107,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     // Return the number of rows in the section.
-    return 4;
+    return 5;
 }
 -(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
     return UITableViewCellEditingStyleNone;

@@ -48,6 +48,8 @@
 		F03480821B96DF4C0083DF3D /* DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F03480801B96DF4C0083DF3D /* DelegateViewController.m */; };
 		F03480831B96DF4C0083DF3D /* DelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03480811B96DF4C0083DF3D /* DelegateViewController.xib */; };
 		F04427421B86C149002677FA /* MainPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F04427411B86C149002677FA /* MainPageModel.m */; };
+		F0ABED8A1B99410E008E4B05 /* AutoLayOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ABED881B99410E008E4B05 /* AutoLayOutViewController.m */; };
+		F0ABED8B1B99410E008E4B05 /* AutoLayOutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ABED891B99410E008E4B05 /* AutoLayOutViewController.xib */; };
 		F0D2C2BD1B8DB0DF00176B97 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D2C2BB1B8DB0DF00176B97 /* MainViewController.m */; };
 		F0D2C2BE1B8DB0DF00176B97 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0D2C2BC1B8DB0DF00176B97 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
@@ -132,6 +134,9 @@
 		F03480811B96DF4C0083DF3D /* DelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DelegateViewController.xib; path = ViewController/FourTransforDataWay/DelegateViewController/DelegateViewController.xib; sourceTree = "<group>"; };
 		F04427411B86C149002677FA /* MainPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainPageModel.m; path = CityModel/MainPageModel.m; sourceTree = "<group>"; };
 		F04427431B86C16B002677FA /* MainPageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainPageModel.h; path = CityModel/MainPageModel.h; sourceTree = "<group>"; };
+		F0ABED871B99410E008E4B05 /* AutoLayOutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoLayOutViewController.h; path = ViewController/AutoLayOut/AutoLayOutViewController.h; sourceTree = "<group>"; };
+		F0ABED881B99410E008E4B05 /* AutoLayOutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AutoLayOutViewController.m; path = ViewController/AutoLayOut/AutoLayOutViewController.m; sourceTree = "<group>"; };
+		F0ABED891B99410E008E4B05 /* AutoLayOutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AutoLayOutViewController.xib; path = ViewController/AutoLayOut/AutoLayOutViewController.xib; sourceTree = "<group>"; };
 		F0D2C2BA1B8DB0DF00176B97 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F0D2C2BB1B8DB0DF00176B97 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F0D2C2BC1B8DB0DF00176B97 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -274,6 +279,7 @@
 		8467F96F1B7CA66000CD5244 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F0ABED861B9940BB008E4B05 /* AutoLayOut */,
 				F03480461B96AA310083DF3D /* FourTransforDataWay */,
 				4A9186F91B9554C6004907F7 /* ControlStudyProject */,
 				F0D2C2B91B8DAE5900176B97 /* NewHomeWork */,
@@ -359,6 +365,16 @@
 				F03480791B96DE750083DF3D /* UIColor+MJCategory.m */,
 			);
 			name = Category;
+			sourceTree = "<group>";
+		};
+		F0ABED861B9940BB008E4B05 /* AutoLayOut */ = {
+			isa = PBXGroup;
+			children = (
+				F0ABED871B99410E008E4B05 /* AutoLayOutViewController.h */,
+				F0ABED881B99410E008E4B05 /* AutoLayOutViewController.m */,
+				F0ABED891B99410E008E4B05 /* AutoLayOutViewController.xib */,
+			);
+			name = AutoLayOut;
 			sourceTree = "<group>";
 		};
 		F0D2C2AA1B8DAC1700176B97 /* DelegateViewController */ = {
@@ -516,6 +532,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0ABED8B1B99410E008E4B05 /* AutoLayOutViewController.xib in Resources */,
 				8467F9501B7CA4B600CD5244 /* Main.storyboard in Resources */,
 				F03480551B96C76C0083DF3D /* BlockListViewController.xib in Resources */,
 				4A9187171B9598C5004907F7 /* TextFieldViewController.xib in Resources */,
@@ -587,6 +604,7 @@
 				4A91870F1B9598A6004907F7 /* RegisterViewController.m in Sources */,
 				F03480681B96C7C60083DF3D /* DelegateListViewController.m in Sources */,
 				F034807E1B96DE810083DF3D /* CommonStyle.m in Sources */,
+				F0ABED8A1B99410E008E4B05 /* AutoLayOutViewController.m in Sources */,
 				4A91870D1B9598A6004907F7 /* MainPageViewController.m in Sources */,
 				F03480631B96C7A70083DF3D /* NotificationCenterViewController.m in Sources */,
 				F034807B1B96DE750083DF3D /* UIColor+MJCategory.m in Sources */,
