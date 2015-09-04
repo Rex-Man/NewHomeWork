@@ -279,6 +279,8 @@
     if (username) {
         MainPageViewController *result = [[MainPageViewController alloc]initWithNibName:@"MainPageViewController" bundle:nil];
         //UINavigationController *mainNavigationController=[[UINavigationController alloc] initWithRootViewController:result];
+        //[self.navigationController pushViewController:result animated:YES];
+
         [self.navigationController setViewControllers:@[result]];
     }
     

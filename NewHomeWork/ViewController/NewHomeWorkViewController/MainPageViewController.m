@@ -11,6 +11,7 @@
 #import <Mantle/Mantle.h>
 #import "MainPageModel.h"
 #import "MainPageTableViewCell.h"
+#import "MainViewController.h"
 
 @interface MainPageViewController ()
 @property (strong,nonatomic) NSMutableArray *mainPageDataArray;
@@ -43,7 +44,14 @@
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     NSString *username = [userDefault objectForKey:@"username"];
     self.title=username;
-    //[self.navigationItem setHidesBackButton:YES];
+    //[self.navigationItem setHidesBackButton:NO];
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithTitle:@"< Main" style:UIBarButtonItemStyleDone target:self action:@selector(selectLeftAction:)];
+    self.navigationItem.leftBarButtonItem=leftButton;
+}
+-(void)selectLeftAction:(id)sender
+{
+    MainViewController *mainViewController=[[MainViewController alloc] init];
+    [self.navigationController setViewControllers:@[mainViewController]];
 }
 -(void) initTableView{
     

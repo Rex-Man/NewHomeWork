@@ -15,6 +15,7 @@
 #import "KVOViewController.h"
 #import "BlockViewController.h"
 #import "CommonStyle.h"
+#import "RegisterViewController.h"
 
 
 @interface MainViewController ()
@@ -120,7 +121,26 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSInteger row = [indexPath row];
     //UITableViewCell *tableCell=[tableView cellForRowAtIndexPath:indexPath];
-    [self.navigationController pushViewController:[dictionarylink objectForKey:informationArray[row]] animated:YES];
+    
+    if ([@"NewHomeWork" caseInsensitiveCompare:informationArray[row]]==NSOrderedSame ) {
+            NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+            NSString *username = [userDefault objectForKey:@"username"];
+        
+        
+            if (!username) {
+                RegisterViewController *registerViewController=[[RegisterViewController alloc] initWithNibName:@"RegisterViewController" bundle:nil];
+                [self.navigationController pushViewController:registerViewController animated:YES];
+        
+            }else{
+        
+                MainPageViewController *mainPageViewController=[[MainPageViewController alloc] initWithNibName:@"MainPageViewController" bundle:nil];
+                [self.navigationController pushViewController:mainPageViewController animated:YES];
+            }
+
+    }else{
+        
+      [self.navigationController pushViewController:[dictionarylink objectForKey:informationArray[row]] animated:YES];
+    }
     
 }
 /*
