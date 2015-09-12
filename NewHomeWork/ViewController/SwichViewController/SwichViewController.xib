@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwichViewController">
+            <connections>
+                <outlet property="SliderValue" destination="nFe-MF-A5O" id="7WE-c0-knV"/>
+                <outlet property="leftSwich" destination="hnS-lr-w63" id="lXt-pm-gag"/>
+                <outlet property="rightSwich" destination="Byt-EH-Hew" id="vod-Nk-0DQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hnS-lr-w63">
+                    <rect key="frame" x="59" y="67" width="51" height="31"/>
+                    <connections>
+                        <action selector="leftSwichValueChanged:" destination="-1" eventType="valueChanged" id="naU-jx-VPy"/>
+                    </connections>
+                </switch>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Byt-EH-Hew">
+                    <rect key="frame" x="260" y="67" width="51" height="31"/>
+                    <connections>
+                        <action selector="rightSwichValueChanged:" destination="-1" eventType="valueChanged" id="VIu-sT-brq"/>
+                    </connections>
+                </switch>
+                <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="ZYH-De-kWc">
+                    <rect key="frame" x="144" y="307" width="118" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="114" id="rOF-Yg-I5c"/>
+                    </constraints>
+                    <connections>
+                        <action selector="sliderValueChange:" destination="-1" eventType="valueChanged" id="ycu-r0-Onb"/>
+                    </connections>
+                </slider>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5ol-OJ-xem">
+                    <rect key="frame" x="137" y="178" width="123" height="29"/>
+                    <segments>
+                        <segment title="left"/>
+                        <segment title="right"/>
+                    </segments>
+                    <connections>
+                        <action selector="touchDown:" destination="-1" eventType="touchDown" id="VOY-Ct-qAL"/>
+                    </connections>
+                </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFe-MF-A5O">
+                    <rect key="frame" x="263" y="279" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="q5K-Ju-RqY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SliderValue:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qf5-py-LnE">
+                    <rect key="frame" x="59" y="278" width="90" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="FW5-te-sTK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5ol-OJ-xem" firstAttribute="trailing" secondItem="ZYH-De-kWc" secondAttribute="trailing" id="1jg-Cb-Zjd"/>
+                <constraint firstItem="nFe-MF-A5O" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="279" id="OGQ-4W-XSl"/>
+                <constraint firstItem="hnS-lr-w63" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="67" id="QzH-Y6-BCc"/>
+                <constraint firstAttribute="bottom" secondItem="ZYH-De-kWc" secondAttribute="bottom" constant="263" id="W70-Zg-wXX"/>
+                <constraint firstItem="5ol-OJ-xem" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="137" id="alY-PF-rAZ"/>
+                <constraint firstItem="hnS-lr-w63" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="59" id="bCb-ac-Gc6"/>
+                <constraint firstItem="Qf5-py-LnE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="278" id="jtF-CH-eNe"/>
+                <constraint firstItem="hnS-lr-w63" firstAttribute="top" secondItem="Byt-EH-Hew" secondAttribute="top" id="lq4-XK-8ZB"/>
+                <constraint firstItem="Byt-EH-Hew" firstAttribute="centerX" secondItem="nFe-MF-A5O" secondAttribute="centerX" id="pBT-S0-DJ1"/>
+                <constraint firstItem="Qf5-py-LnE" firstAttribute="trailing" secondItem="hnS-lr-w63" secondAttribute="trailing" constant="41" id="sga-Rf-xhb"/>
+                <constraint firstItem="Byt-EH-Hew" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="260" id="tj9-OP-eFJ"/>
+                <constraint firstItem="5ol-OJ-xem" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="178" id="vJ6-TG-3C8"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

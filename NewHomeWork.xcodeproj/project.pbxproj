@@ -19,6 +19,12 @@
 		4A9187171B9598C5004907F7 /* TextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A9187151B9598C5004907F7 /* TextFieldViewController.xib */; };
 		4A91871B1B9598E3004907F7 /* TextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9187191B9598E3004907F7 /* TextViewViewController.m */; };
 		4A91871C1B9598E3004907F7 /* TextViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A91871A1B9598E3004907F7 /* TextViewViewController.xib */; };
+		4AE5F2661B9B25580002F2F7 /* SwichViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE5F2641B9B25580002F2F7 /* SwichViewController.m */; };
+		4AE5F2671B9B25580002F2F7 /* SwichViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE5F2651B9B25580002F2F7 /* SwichViewController.xib */; };
+		4AEB4D4A1BA4142D00945FF7 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB4D481BA4142D00945FF7 /* ScrollViewController.m */; };
+		4AEB4D4B1BA4142D00945FF7 /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AEB4D491BA4142D00945FF7 /* ScrollViewController.xib */; };
+		4AEB4D541BA4158F00945FF7 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB4D521BA4158F00945FF7 /* WebViewController.m */; };
+		4AEB4D551BA4158F00945FF7 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AEB4D531BA4158F00945FF7 /* WebViewController.xib */; };
 		6CBC07E000B9B0F9C0B33E6F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5A1B0BCC4D22DF1B6D37D1 /* libPods.a */; };
 		840A88EE1B85A1EC00A42CE1 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A88ED1B85A1EC00A42CE1 /* CityModel.m */; };
 		8467F9471B7CA4B600CD5244 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8467F9461B7CA4B600CD5244 /* main.m */; };
@@ -84,6 +90,15 @@
 		4A9187181B9598E3004907F7 /* TextViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextViewViewController.h; path = ViewController/TextViewViewController/TextViewViewController.h; sourceTree = "<group>"; };
 		4A9187191B9598E3004907F7 /* TextViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextViewViewController.m; path = ViewController/TextViewViewController/TextViewViewController.m; sourceTree = "<group>"; };
 		4A91871A1B9598E3004907F7 /* TextViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextViewViewController.xib; path = ViewController/TextViewViewController/TextViewViewController.xib; sourceTree = "<group>"; };
+		4AE5F2631B9B25580002F2F7 /* SwichViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwichViewController.h; path = ViewController/SwichViewController/SwichViewController.h; sourceTree = "<group>"; };
+		4AE5F2641B9B25580002F2F7 /* SwichViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwichViewController.m; path = ViewController/SwichViewController/SwichViewController.m; sourceTree = "<group>"; };
+		4AE5F2651B9B25580002F2F7 /* SwichViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SwichViewController.xib; path = ViewController/SwichViewController/SwichViewController.xib; sourceTree = "<group>"; };
+		4AEB4D471BA4142D00945FF7 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollViewController.h; path = ViewController/ScrollViewController/ScrollViewController.h; sourceTree = "<group>"; };
+		4AEB4D481BA4142D00945FF7 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScrollViewController.m; path = ViewController/ScrollViewController/ScrollViewController.m; sourceTree = "<group>"; };
+		4AEB4D491BA4142D00945FF7 /* ScrollViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScrollViewController.xib; path = ViewController/ScrollViewController/ScrollViewController.xib; sourceTree = "<group>"; };
+		4AEB4D511BA4158F00945FF7 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = ViewController/WebViewController/WebViewController.h; sourceTree = "<group>"; };
+		4AEB4D521BA4158F00945FF7 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = ViewController/WebViewController/WebViewController.m; sourceTree = "<group>"; };
+		4AEB4D531BA4158F00945FF7 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WebViewController.xib; path = ViewController/WebViewController/WebViewController.xib; sourceTree = "<group>"; };
 		840A88EC1B85A1C000A42CE1 /* CityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CityModel.h; path = CityModel/CityModel.h; sourceTree = "<group>"; };
 		840A88ED1B85A1EC00A42CE1 /* CityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityModel.m; path = CityModel/CityModel.m; sourceTree = "<group>"; };
 		8467F9411B7CA4B600CD5244 /* NewHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +179,9 @@
 		4A9186F91B9554C6004907F7 /* ControlStudyProject */ = {
 			isa = PBXGroup;
 			children = (
+				4AEB4D461BA412BA00945FF7 /* WebViewController */,
+				4AEB4D451BA4124D00945FF7 /* ScrollViewController */,
+				4AE5F2681B9B25650002F2F7 /* SwichViewController */,
 				4A9186FE1B957BD4004907F7 /* TextViewViewController */,
 				4A9186FD1B957BB6004907F7 /* TextFieldViewController */,
 			);
@@ -188,6 +206,36 @@
 				4A91871A1B9598E3004907F7 /* TextViewViewController.xib */,
 			);
 			name = TextViewViewController;
+			sourceTree = "<group>";
+		};
+		4AE5F2681B9B25650002F2F7 /* SwichViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4AE5F2631B9B25580002F2F7 /* SwichViewController.h */,
+				4AE5F2641B9B25580002F2F7 /* SwichViewController.m */,
+				4AE5F2651B9B25580002F2F7 /* SwichViewController.xib */,
+			);
+			name = SwichViewController;
+			sourceTree = "<group>";
+		};
+		4AEB4D451BA4124D00945FF7 /* ScrollViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4AEB4D471BA4142D00945FF7 /* ScrollViewController.h */,
+				4AEB4D481BA4142D00945FF7 /* ScrollViewController.m */,
+				4AEB4D491BA4142D00945FF7 /* ScrollViewController.xib */,
+			);
+			name = ScrollViewController;
+			sourceTree = "<group>";
+		};
+		4AEB4D461BA412BA00945FF7 /* WebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4AEB4D511BA4158F00945FF7 /* WebViewController.h */,
+				4AEB4D521BA4158F00945FF7 /* WebViewController.m */,
+				4AEB4D531BA4158F00945FF7 /* WebViewController.xib */,
+			);
+			name = WebViewController;
 			sourceTree = "<group>";
 		};
 		680F9E6BF3F56ECC691A580C /* Pods */ = {
@@ -533,6 +581,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0ABED8B1B99410E008E4B05 /* AutoLayOutViewController.xib in Resources */,
+				4AE5F2671B9B25580002F2F7 /* SwichViewController.xib in Resources */,
 				8467F9501B7CA4B600CD5244 /* Main.storyboard in Resources */,
 				F03480551B96C76C0083DF3D /* BlockListViewController.xib in Resources */,
 				4A9187171B9598C5004907F7 /* TextFieldViewController.xib in Resources */,
@@ -548,7 +597,9 @@
 				4A9187101B9598A6004907F7 /* RegisterViewController.xib in Resources */,
 				F03480831B96DF4C0083DF3D /* DelegateViewController.xib in Resources */,
 				F0D2C2BE1B8DB0DF00176B97 /* MainViewController.xib in Resources */,
+				4AEB4D4B1BA4142D00945FF7 /* ScrollViewController.xib in Resources */,
 				8467F9551B7CA4B600CD5244 /* LaunchScreen.xib in Resources */,
+				4AEB4D551BA4158F00945FF7 /* WebViewController.xib in Resources */,
 				4A91871C1B9598E3004907F7 /* TextViewViewController.xib in Resources */,
 				8467F9521B7CA4B600CD5244 /* Images.xcassets in Resources */,
 			);
@@ -602,6 +653,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A91870F1B9598A6004907F7 /* RegisterViewController.m in Sources */,
+				4AEB4D4A1BA4142D00945FF7 /* ScrollViewController.m in Sources */,
 				F03480681B96C7C60083DF3D /* DelegateListViewController.m in Sources */,
 				F034807E1B96DE810083DF3D /* CommonStyle.m in Sources */,
 				F0ABED8A1B99410E008E4B05 /* AutoLayOutViewController.m in Sources */,
@@ -609,6 +661,7 @@
 				F03480631B96C7A70083DF3D /* NotificationCenterViewController.m in Sources */,
 				F034807B1B96DE750083DF3D /* UIColor+MJCategory.m in Sources */,
 				840A88EE1B85A1EC00A42CE1 /* CityModel.m in Sources */,
+				4AE5F2661B9B25580002F2F7 /* SwichViewController.m in Sources */,
 				F03480591B96C77C0083DF3D /* BlockViewController.m in Sources */,
 				F034807A1B96DE750083DF3D /* NSMutableArray+AddFunction.m in Sources */,
 				8467F94D1B7CA4B600CD5244 /* ViewController.m in Sources */,
@@ -621,6 +674,7 @@
 				F0D2C2BD1B8DB0DF00176B97 /* MainViewController.m in Sources */,
 				F03480721B96CAE60083DF3D /* KVOListViewController.m in Sources */,
 				F04427421B86C149002677FA /* MainPageModel.m in Sources */,
+				4AEB4D541BA4158F00945FF7 /* WebViewController.m in Sources */,
 				F03480541B96C76C0083DF3D /* BlockListViewController.m in Sources */,
 				F034806D1B96CAD20083DF3D /* KVOViewController.m in Sources */,
 				4A9187111B9598A6004907F7 /* ResultViewController.m in Sources */,

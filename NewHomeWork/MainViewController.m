@@ -17,6 +17,9 @@
 #import "CommonStyle.h"
 #import "RegisterViewController.h"
 #import "AutoLayOutViewController.h"
+#import "SwichViewController.h"
+#import "WebViewController.h"
+#import "ScrollViewController.h"
 
 
 @interface MainViewController ()
@@ -41,7 +44,7 @@
 }
 -(void)initTableView
 {
-    informationArray=[NSArray arrayWithObjects:@"TextField",@"TextView",@"NewHomeWork",@"FourWaysTransforData",@"AutoLayOut",nil];
+    informationArray=[NSArray arrayWithObjects:@"TextField",@"TextView",@"NewHomeWork",@"FourWaysTransforData",@"AutoLayOut",@"Swich",@"WebView",@"ScrollView",nil];
     TextFieldViewController *textFieldViewController=[[TextFieldViewController alloc] initWithNibName:@"TextFieldViewController" bundle:nil];
     TextViewViewController *textViewViewController=[[TextViewViewController alloc]initWithNibName:@"TextViewViewController" bundle:nil];
     MainPageViewController *mainViewController=[[MainPageViewController alloc] initWithNibName:@"MainPageViewController" bundle:nil];
@@ -90,9 +93,15 @@
     //test AutoLayOut
     AutoLayOutViewController *autoLayOutViewController=[[AutoLayOutViewController alloc] initWithNibName:@"AutoLayOutViewController" bundle:nil];
     
+    SwichViewController *swichViewController=[[SwichViewController alloc] initWithNibName:@"SwichViewController" bundle:nil];
+    
+    
+    WebViewController *webViewController=[[WebViewController alloc] initWithNibName:@"WebViewController" bundle:nil];
+    
+    ScrollViewController *scrollViewController=[[ScrollViewController alloc] initWithNibName:@"ScrollViewController" bundle:nil];
     
 
-    dictionarylink=[[NSDictionary alloc] initWithObjectsAndKeys:textFieldViewController,@"TextField",textViewViewController,@"TextView",mainViewController,@"NewHomeWork",tabBarController,@"FourWaysTransforData",autoLayOutViewController,@"AutoLayOut", nil];
+    dictionarylink=[[NSDictionary alloc] initWithObjectsAndKeys:textFieldViewController,@"TextField",textViewViewController,@"TextView",mainViewController,@"NewHomeWork",tabBarController,@"FourWaysTransforData",autoLayOutViewController,@"AutoLayOut",swichViewController,@"Swich",webViewController,@"WebView",scrollViewController,@"ScrollView", nil];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -107,7 +116,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     // Return the number of rows in the section.
-    return 5;
+    return 8;
 }
 -(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
     return UITableViewCellEditingStyleNone;
